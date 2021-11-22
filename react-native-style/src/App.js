@@ -1,16 +1,13 @@
 import React from "react";
 import {StyleSheet, View, Text} from "react-native";
 import { viewStyle, textStyle } from "./styles";
+import { Contents, Footer, Header } from "../component/Layout";
+import EventButton from "../component/EventButton";
 
 const App = () => {
     return (
         <View style = {viewStyle.container}>
-            <Text style = {textStyle.text}>
-                text containr style - black
-            </Text>
-            <Text style = {[textStyle.text, textStyle.error]}>
-                text contaier style - red
-            </Text>
+            <EventButton/>
         </View>
     );
 };
