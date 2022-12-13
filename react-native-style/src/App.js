@@ -7,7 +7,9 @@ import EventButton from "../component/EventButton";
 const App = () => {
     return (
         <View style = {viewStyle.container}>
-            <EventButton/>
+            <Header />
+            <Contents />
+            <Footer />
         </View>
     );
 };
