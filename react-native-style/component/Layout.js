@@ -34,11 +34,9 @@ const styles = StyleSheet.create({
     },
     header : {
         backgroundColor : '#f1c40f',
-        
     },
     contents : {
         backgroundColor : '#1abc9c',
-        height : 640,
         flex : 1,
     },
     footer : {

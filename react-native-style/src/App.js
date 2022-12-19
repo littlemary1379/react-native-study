@@ -2,17 +2,26 @@ import React from "react";
 import {StyleSheet, View, Text} from "react-native";
 import { viewStyle, textStyle } from "./styles";
 import { Contents, Footer, Header } from "../component/Layout";
+import { ColumnExample } from "../component/Flex";
 import EventButton from "../component/EventButton";
 
 const App = () => {
     return (
         <View style = {viewStyle.container}>
-            <Header />
-            <Contents />
-            <Footer />
+            <ColumnExample />
         </View>
     );
 };
+
+// const App = () => {
+//     return (
+//         <View style = {viewStyle.container}>
+//             <Header />
+//             <Contents />
+//             <Footer />
+//         </View>
+//     );
+// };
 
 // const style = StyleSheet.create({
 //     container : {
