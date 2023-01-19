@@ -5,14 +5,33 @@ import { Contents, Footer, Header } from "../component/Layout";
 import ShadowBox from "../component/ShadowBox";
 import { ColumnExample } from "../component/Flex";
 import EventButton from "../component/EventButton";
+import styled from "styled-components/native";
+import Button from "../component/Button";
+
+
+const Container = styled.View`
+    flex: 1;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+`;
 
 const App = () => {
     return (
-        <View style = {viewStyle.container}>
-            <ShadowBox />
-        </View>
+        <Container>
+            <Button title="Mary"/>
+            <Button title="React Native"/>
+        </Container>
     );
 };
+
+// const App = () => {
+//     return (
+//         <View style = {viewStyle.container}>
+//             <ShadowBox />
+//         </View>
+//     );
+// };
 
 // const App = () => {
 //     return (
