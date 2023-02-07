@@ -3,6 +3,8 @@ import { StatusBar } from "react-native";
 import styled, { ThemeProvider } from "styled-components/native";
 import { theme } from "./theme"
 import Input from "./component/Input";
+import IconButton from "./component/IconButton";
+import { images } from "./image";
 
 const Container = styled.SafeAreaView`
     flex: 1;
@@ -45,6 +47,12 @@ export default function App() {
                     value = {newTask}
                     onChangeText = {handleTextChange}
                     onSubmitEditing = {addTask}/>
+
+                <IconButton type={images.uncompleted} />
+                <IconButton type={images.complete} />
+                <IconButton type={images.delete} />
+                <IconButton type={images.update} />
+
             </Container>
         </ThemeProvider>
     );
